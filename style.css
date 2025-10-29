@@ -1,0 +1,213 @@
+.firstView {
+    height: 100vh; /* 100% of viewport height */
+    width: 100%;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    height: 60px;
+}
+
+.centerContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap
+}
+
+h1 { font-size: 40px; }
+h2 { font-size: 33px; }
+h3 { font-size: 30px; }
+
+h4 {
+    font-size: 30px;
+}
+
+.topButtons,
+.bottomButtons {
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+
+.topButtons button,
+.bottomButtons button {
+    padding: 5px 10px;
+    font-size: 16px;
+    min-width: max-content;
+}
+
+.topButtons {
+    margin-top: 25px;
+}
+
+button {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: rgb(243, 242, 242);
+}
+
+button:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.profileView,
+.educationView, 
+.workExpView,
+.projectsView,
+.contactView {
+    min-height: 300px;
+    background: linear-gradient(to bottom, #4a90e2, #4b85ac);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fade-between {
+    height: 80px;
+    background: linear-gradient(to bottom, #4b85ac, #4a90e2);
+}
+
+.profileView, 
+.educationView,
+.workExpView, 
+.projectsView {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 80px;
+    margin: 0 auto;
+    min-height: 300px; 
+    gap: 20px;
+    flex-wrap: wrap;   
+}
+
+.profileDiv,
+.educationDiv, 
+.workExpDiv,
+.projectsDiv {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    max-width: 500px
+}
+
+.profileView h4, 
+.educationView h4,
+.workExpView h4,
+.projectsView h4 {
+    text-align: left;
+    margin: 0;            
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.profileView p, 
+.educationView p,
+.workExpView p,
+.profileView p {
+    margin: 0;    
+    font-size: 1rem;
+    line-height: 1.6;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+.profileImg, 
+.educationImg,
+.workExpImg, 
+.projectsImg {
+    display: flex; 
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileImg img,
+.educationImg img {
+    max-width: 300px;
+    max-height: auto;
+    object-fit: contain;     
+}
+
+.workExpImg img,
+.projectsImg img {
+    max-width: 250px;
+    max-height: auto;
+    object-fit: contain;     
+}
+
+@media (max-width: 800px) {
+    .profileView,
+    .educationView,
+    .workExpView,
+    .projectsView {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profileDiv,
+    .educationDiv,
+    .workExpDiv,
+    .projectsDiv {
+        max-width: 90%;
+    }
+
+    .profileImg, 
+    .educationImg, 
+    .workExpImg,
+    .projectsImg {
+        margin-top: 20px;
+    }
+}
+
+.educationText,
+.workExpText {
+    display: flex;
+    flex-direction: column; 
+}
+
+.educationText .line1{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.educationText .line2 {
+  font-size: 1.1rem;
+  margin: 4px 0;
+}
+
+.workExpText .line1{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.workExpText .line2 {
+  font-size: 1.1rem;
+}
+
+.workExpText .line3 {
+  font-size: 1rem;
+}
+
+
+
+
+
