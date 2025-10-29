@@ -8,94 +8,99 @@
         <link rel="icon" type="image/png" href="images/logo.png" />
     </head>
     <body>
-        <section class="firstView">
-            <img src="images/logo.png" class="logo" alt="Logo">
+        <div class="mainContent">
+            <section class="firstView">
+                <img src="images/logo.png" class="logo" alt="Logo">
 
-            <div class="centerContent">
-                <h1> Hello, my name is Hadar </h1>
-                <h2> I am a software engineer from New York City </h2>
-                <h3> Get to know me </h3>
+                <div class="centerContent">
+                    <h1> Hello, my name is Hadar </h1>
+                    <h2> I am a software engineer from New York City </h2>
+                    <h3> Get to know me </h3>
 
-                <div class="topButtons">
-                    <button id="profileButton"> Profile </button>
-                    <button id="educationButton"> Education </button>
-                    <button id="workExpButton"> Work Experience </button>
+                    <div class="topButtons">
+                        <button id="profileButton"> Profile </button>
+                        <button id="educationButton"> Education </button>
+                        <button id="workExpButton"> Work Experience </button>
+                    </div>
+
+                    <div class="bottomButtons">
+                        <button id="projectsButton"> Projects </button>
+                        <button id="contactButton"> Contact </button>
+                    </div>
                 </div>
+            </section>
 
-                <div class="bottomButtons">
-                    <button id="projectsButton"> Projects </button>
-                    <button id="contactButton"> Contact </button>
+            <section id="profileView" class="profileView">
+                <div class="profileDiv">
+                    <h4> Profile </h4>
+                    <p>
+                        Entry-level Software Engineer with a Bachelor of Science in Software Engineering. 
+                        Experienced in multiple programming languages and development concepts. 
+                        Eager to contribute to an innovative company and continue learning new technologies.
+                    </p>
                 </div>
-            </div>
-        </section>
+                <div class="profileImg">
+                    <img src="images/profileDrawRB.png" alt="profile Img">
+                </div>
+            </section>
 
-        <section id="profileView" class="profileView">
-            <div class="profileDiv">
-                <h4> Profile </h4>
-                <p>
-                    Entry-level Software Engineer with a Bachelor of Science in Software Engineering. 
-                    Experienced in multiple programming languages and development concepts. 
-                    Eager to contribute to an innovative company and continue learning new technologies.
-                </p>
-            </div>
-            <div class="profileImg">
-                <img src="images/profileDrawRB.png" alt="profile Img">
-            </div>
-        </section>
+            <div class="fade-between"></div>
 
-        <div class="fade-between"></div>
+            <section id="educationView" class="educationView">
+                <div class="educationDiv">
+                    <h4> Education </h4>
+                    <p class="educationText">
+                        <span class="line1"> B.Sc Software Engineering </span>
+                        <span class="line2"> Kinneret College (2020-2024) </span>
+                    </p>
+                </div>
+                <div class="educationImg">
+                    <img src="images/educationDrawRB.png" alt="education Img">
+                </div>
+            </section>
 
-        <section id="educationView" class="educationView">
-            <div class="educationDiv">
-                <h4> Education </h4>
-                <p class="educationText">
-                    <span class="line1"> B.Sc Software Engineering </span>
-                    <span class="line2"> Kinneret College (2020-2024) </span>
-                </p>
-            </div>
-            <div class="educationImg">
-                <img src="images/educationDrawRB.png" alt="education Img">
-            </div>
-        </section>
+            <div class="fade-between"></div>
 
-        <div class="fade-between"></div>
+            <section id="workExpView" class="workExpView">
+                <div class="workExpDiv">
+                    <h4> Work Experience </h4>
+                    <p class="workExpText">
+                        <span class="line1"> Theater </span>
+                        <span class="line2"> Customer Service Representative </span>
+                        <span class="line3"> Managed phone inquiries, ticket sales, 
+                            and customer orders through theater software, 
+                            providing friendly and efficient service to guests at the box office. </span>
+                    </p>
+                </div>
+                <div class="workExpImg">
+                    <img src="images/workExpDrawRB.png" alt="Work Exp Img">
+                </div>
+            </section>
 
-        <section id="workExpView" class="workExpView">
-            <div class="workExpDiv">
-                <h4> Work Experience </h4>
-                <p class="workExpText">
-                    <span class="line1"> Theater </span>
-                    <span class="line2"> Customer Service Representative </span>
-                    <span class="line3"> Managed phone inquiries, ticket sales, 
-                        and customer orders through theater software, 
-                        providing friendly and efficient service to guests at the box office. </span>
-                </p>
-            </div>
-            <div class="workExpImg">
-                <img src="images/workExpDrawRB.png" alt="Work Exp Img">
-            </div>
-        </section>
+            <div class="fade-between"></div>
 
-        <div class="fade-between"></div>
+            <section id="projectsView" class="projectsView">
+                <div class="projectsDiv">
+                    <h4> Projects </h4>
+                    <a href="https://github.com/Hadar-Rand" target="_blank">
+                        <p> Link to GitHub </p>
+                    </a>
+                </div>
+                <div class="projectsImg">
+                    <img src="images/projectsDrawRB.png" alt="Work Exp Img">
+                </div>
+            </section>
 
-        <section id="projectsView" class="projectsView">
-            <div class="projectsDiv">
-                <h4> Projects </h4>
-                <a href="https://github.com/Hadar-Rand" target="_blank">
-                    <p> Link to GitHub </p>
-                </a>
-            </div>
-            <div class="projectsImg">
-                <img src="images/projectsDrawRB.png" alt="Work Exp Img">
-            </div>
-        </section>
+            <div class="fade-between"></div>
 
-        <div class="fade-between"></div>
+            <section id="contactView" class="contactView">
+                <div class="contactDiv">
+                    <h4> Contact </h4>
+                    <p> Hadarand@gmail.com </p>
+                </div>
+            </section>
 
-        <section id="contactView" class="contactView">
-            <h4> Contact </h4>
-        </section>
-
-        <script src="script.js"></script>
+            <script src="script.js"></script>
+        </div>
     </body>
 </html>
